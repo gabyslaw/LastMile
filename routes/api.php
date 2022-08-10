@@ -21,7 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::group(['prefix' => 'v1'], function(){
     Route::get('/', function() {
-        return 'ZAP Services API version 1.0';
+        return 'Last MIls API version 1.0';
     });
     Route::group(['prefix' => 'order'], function() {
         Route::get('/', [\App\Http\Controllers\Order\OrderController::class,'index']);
